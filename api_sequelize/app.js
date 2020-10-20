@@ -3,8 +3,10 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 const express = require('express')
 const morgan = require('morgan')
+
 const playlistsRoutes = require('./routes/playlists')
 const userRoutes = require('./routes/user')
+
 const PORT = process.env.PORT
 const app = express()
 

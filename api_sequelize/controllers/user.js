@@ -7,7 +7,6 @@ const SECRET_KEY = process.env.SECRET_KEY
 
 exports.create_user = (req, res) => {
   const {username, password} = req.body
-  console.log(HASH_SALT)
   
   User.findOne({ where: { username: username }})
     .then(existingUser => {
